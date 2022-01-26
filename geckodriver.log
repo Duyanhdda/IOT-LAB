@@ -1,0 +1,123 @@
+1643176276526	geckodriver	INFO	Listening on 127.0.0.1:59681
+1643176279589	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "59682" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofileOUEun3"
+1643176395833	geckodriver	INFO	Listening on 127.0.0.1:59830
+1643176398900	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "59831" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofileqU9YIs"
+1643176399403	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofileqU9YIs\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59831/devtools/browser/54a7f643-f359-49af-91f9-4e725a1c0546
+1643176401531	Marionette	INFO	Listening on port 59836
+1643176402142	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1643176434470	geckodriver	INFO	Listening on 127.0.0.1:59909
+1643176437392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "59910" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofilep7caim"
+1643176437893	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofilep7caim\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59910/devtools/browser/b1647a01-188a-4486-85d7-5ec37b25dbf4
+1643176439793	Marionette	INFO	Listening on port 59915
+1643176440032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.where-am-i.co/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vF3DwGiQdwtNbsVxkFzRL_iZiNaTmsYTTs4lOxRXugY.js line 1 > eval line 7415 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1643176450757	Marionette	INFO	Stopped listening on port 59915
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1643176459754	geckodriver	INFO	Listening on 127.0.0.1:60005
+1643176462674	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "60006" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofilemNmGc4"
+1643176463204	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofilemNmGc4\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60006/devtools/browser/8d62e78b-8415-471f-96fa-6d98b48cf5dc
+1643176465090	Marionette	INFO	Listening on port 60011
+1643176465308	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.where-am-i.co/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vF3DwGiQdwtNbsVxkFzRL_iZiNaTmsYTTs4lOxRXugY.js line 1 > eval line 1730 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1643176480544	Marionette	INFO	Stopped listening on port 60011
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1643176487285	geckodriver	INFO	Listening on 127.0.0.1:60106
+1643176490346	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "60107" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofileeGoMTm"
+1643176490736	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofileeGoMTm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60107/devtools/browser/35b6ad21-4486-4273-900f-dbc3d48c5dba
+1643176492546	Marionette	INFO	Listening on port 60112
+1643176492969	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.where-am-i.co/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vF3DwGiQdwtNbsVxkFzRL_iZiNaTmsYTTs4lOxRXugY.js line 1 > eval line 7687 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1643176526628	geckodriver	INFO	Listening on 127.0.0.1:60267
+1643176529563	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "60268" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofileKwH9Lc"
+1643176529953	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofileKwH9Lc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60268/devtools/browser/70dc3422-13a2-4107-92c5-c48bbd7a2c7d
+1643176531837	Marionette	INFO	Listening on port 60273
+1643176532201	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.where-am-i.co/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vF3DwGiQdwtNbsVxkFzRL_iZiNaTmsYTTs4lOxRXugY.js line 1 > eval line 5270 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1643176548369	geckodriver	INFO	Listening on 127.0.0.1:60361
+1643176551305	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "60362" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofileQshPqG"
+1643176551669	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofileQshPqG\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60362/devtools/browser/2d829463-69f8-4ce6-9e58-dcdc65f44d14
+1643176553562	Marionette	INFO	Listening on port 60367
+1643176553934	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.where-am-i.co/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vF3DwGiQdwtNbsVxkFzRL_iZiNaTmsYTTs4lOxRXugY.js line 1 > eval line 4813 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1643176565689	Marionette	INFO	Stopped listening on port 60367
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1643176779977	geckodriver	INFO	Listening on 127.0.0.1:60530
+1643176783028	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--remote-debugging-port" "60531" "-no-remote" "-profile" "C:\\Users\\MICROS~1\\AppData\\Local\\Temp\\rust_mozprofilew9SeQh"
+1643176783442	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\microsoft\\AppData\\Local\\Temp\\rust_mozprofilew9SeQh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60531/devtools/browser/3840e780-0ee5-4a76-bd80-9e644097ba32
+1643176785379	Marionette	INFO	Listening on port 60536
+1643176785656	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.where-am-i.co/js/jquery.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://pagead2.googlesyndication.com/bg/vF3DwGiQdwtNbsVxkFzRL_iZiNaTmsYTTs4lOxRXugY.js line 1 > eval line 7679 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: , line 0: WebGL warning: texImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1643176808161	Marionette	INFO	Stopped listening on port 60536
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
