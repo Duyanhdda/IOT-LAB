@@ -3,7 +3,6 @@
 print("Xin chào ThingsBoard")
 import paho.mqtt.client as mqttclient
 import time
-import json
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 driver = webdriver.Chrome()
@@ -81,9 +80,10 @@ def locate():
     data = str(element.text)
     latlon = data.split(', ')
     return latlon
-longtitude = locate()[1]
-latitude= locate()[0]
+
 while True:
+    longtitude = locate()[1]
+    latitude = locate()[0]
     collect_data = {'temperature': temp, 'humidity': humi, 'light': light_intesity
                     , 'longitude': longtitude, 'latitude': latitude}
     temp += 1
