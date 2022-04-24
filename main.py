@@ -1,20 +1,37 @@
-
+print("IoT Gateway")
 import paho.mqtt.client as mqttclient
 import time
+import json
 import serial.tools.list_ports
-print("Xin chào ThingsBoard")
+
+BROKER_ADDRESS = "demo.thingsboard.io"
+PORT = 1883
 mess = ""
-bbc_port = "COM7"
+
+#TODO: Add your token and your comport
+#Please check the comport in the device manager
+THINGS_BOARD_ACCESS_TOKEN = "usEV5ZbXgnWRnl7z9puf"
+bbc_port = "COM9"
 if len(bbc_port) > 0:
     ser = serial.Serial(port=bbc_port, baudrate=115200)
-
-
+light = 0
+temp = 0
 def processData(data):
+    global light
+    global temp
     data = data.replace("!", "")
     data = data.replace("#", "")
     splitData = data.split(":")
     print(splitData)
-
+    if (splitData[1]=='LIGHT'):
+        light = int(splitData[2])
+        collect_data = {'temperature': temp, 'light' : light}
+        client.publish('v1/devices/me/telemetry', json.dumps(collect_data), 1)
+    else:
+        temp = int(splitData[2])
+        collect_data = {'temperature': temp, 'light' : light}
+        client.publish('v1/devices/me/telemetry', json.dumps(collect_data), 1)
+    #TODO: Add your source code to publish data to the server
 
 def readSerial():
     bytesToRead = ser.inWaiting()
@@ -28,32 +45,36 @@ def readSerial():
             if (end == len(mess)):
                 mess = ""
             else:
-                mess = mess[end + 1:]
-
-
-BROKER_ADDRESS = "demo.thingsboard.io"
-PORT = 1883
-THINGS_BOARD_ACCESS_TOKEN = "tpmf3c9NcxvIH3rq9FGk"
+                mess = mess[end+1:]
 
 
 def subscribed(client, userdata, mid, granted_qos):
     print("Subscribed...")
 
-cmd = 0
 def recv_message(client, userdata, message):
     print("Received: ", message.payload.decode("utf-8"))
     temp_data = {'value': True}
+    cmd = 0 
+    #TODO: Update the cmd to control 2 devices
     try:
         jsonobj = json.loads(message.payload)
-        # if jsonobj['method'] == "setValue":
         if jsonobj['method'] == "setLED":
-            temp_data['valueLED'] = jsonobj['params']
-            client.publish('v1/devices/me/attributes', json.dumps(temp_data), 1)
-        elif jsonobj['method'] == "setAIR":
-            temp_data['valueAIR'] = jsonobj['params']
-            client.publish('v1/devices/me/attributes', json.dumps(temp_data), 1)
+            temp_data['value'] = jsonobj['params']
+            client.publish('v1/devices/me/Button_Led', json.dumps(temp_data), 1)
+            if(temp_data['value'] == True):
+                cmd =1
+            else:
+                cmd = 0    
+        if jsonobj['method'] == "setFAN":
+            temp_data['value'] = jsonobj['params']
+            client.publish('v1/devices/me/Button_fan', json.dumps(temp_data), 1)
+            if(temp_data['value'] == True):
+                cmd = 3
+            else:
+                cmd = 2    
     except:
         pass
+
     if len(bbc_port) > 0:
         ser.write((str(cmd) + "#").encode())
 
@@ -75,32 +96,10 @@ client.loop_start()
 client.on_subscribe = subscribed
 client.on_message = recv_message
 
-temp = 30
-humi = 50
-light_intesity = 100
-counter = 0
-from requests import get
-import json
-import urllib.request
-
-ip_address = get('https://api.ipify.org').content.decode('utf8')
-
-GEO_IP_API_URL = 'http://ip-api.com/json/'
-
-# Can be also site URL like this : 'google.com'
-IP_TO_SEARCH = ip_address
-
-# Creating request object to GeoLocation API
-req = urllib.request.Request(GEO_IP_API_URL + IP_TO_SEARCH)
-# Getting in response JSON
-response = urllib.request.urlopen(req).read()
-# Loading JSON from text to object
-json_response = json.loads(response.decode('utf-8'))
-latitude = json_response['lat']
-longitude = json_response['lon']
 
 while True:
 
-    if len(bbc_port) > 0:
+    if len(bbc_port) >  0:
         readSerial()
+
     time.sleep(1)
