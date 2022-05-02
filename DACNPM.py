@@ -8,7 +8,7 @@ import serial.tools.list_ports
 AIO_FEED_ID_LED = "btt-led"
 AIO_FEED_ID_FAN = "btt-fan"
 AIO_USERNAME = "duyvu1109"
-AIO_KEY = "aio_APje81ttogFqZ1rbz5Ld8ZqkBUzO"
+AIO_KEY = "aio_MEKq59TIlbE7a0EFHAIyEMpSVErR"
 bbc_port = "COM10"
 mess = ""
 if len(bbc_port) > 0:

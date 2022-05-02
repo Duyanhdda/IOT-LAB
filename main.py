@@ -4,6 +4,7 @@ import time
 import json
 import serial.tools.list_ports
 
+from simple_ai import simple_ai
 BROKER_ADDRESS = "demo.thingsboard.io"
 PORT = 1883
 mess = ""
@@ -11,7 +12,7 @@ mess = ""
 #TODO: Add your token and your comport
 #Please check the comport in the device manager
 THINGS_BOARD_ACCESS_TOKEN = "usEV5ZbXgnWRnl7z9puf"
-bbc_port = "COM9"
+bbc_port = "COM11"
 if len(bbc_port) > 0:
     ser = serial.Serial(port=bbc_port, baudrate=115200)
 light = 0
@@ -23,14 +24,15 @@ def processData(data):
     data = data.replace("#", "")
     splitData = data.split(":")
     print(splitData)
-    if (splitData[1]=='LIGHT'):
-        light = int(splitData[2])
-        collect_data = {'temperature': temp, 'light' : light}
-        client.publish('v1/devices/me/telemetry', json.dumps(collect_data), 1)
-    else:
-        temp = int(splitData[2])
-        collect_data = {'temperature': temp, 'light' : light}
-        client.publish('v1/devices/me/telemetry', json.dumps(collect_data), 1)
+    # TODO: Add your source code to publish data to the server
+    # Example demo hercules: !1:TEMP:35## !2:LIGHT:33##
+    if splitData[1] == "TEMP":
+        splitData[1] = "temperature"
+    elif splitData[1] == "LIGHT":
+        splitData[1] = "light"
+    collect_data = {splitData[1]: int(splitData[2])}
+    # print(collect_data)
+    client.publish("v1/devices/me/telemetry", json.dumps(collect_data), 1)
     #TODO: Add your source code to publish data to the server
 
 def readSerial():
